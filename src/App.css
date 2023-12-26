@@ -18,6 +18,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
+  overflow: hidden;
 }
 .weather-card{
   position: relative;
@@ -26,6 +28,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: 550px;
+  
   width: 400px;
   border: 2px solid rgb(89, 108, 128,);
   border-radius: 6px;

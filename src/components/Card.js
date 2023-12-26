@@ -328,14 +328,14 @@ useEffect(() => {
                       )}
                       </form>
                     </div>
-                    <div style={{position:'absolute', bottom:'-6px', display:'flex', alignItems:'center'}}>
-                      <div style={{marginLeft:'9px', display:'flex', alignItems:'center', gap:'2px', marginBottom:'-5px'}}>
+                    <div style={{position:'absolute', bottom:'7px', display:'flex', alignItems:'center', height:'20px', maxWidth:'190px'}}>
+                      <div style={{marginLeft:'9px', display:'flex', alignItems:'center', gap:'2px', marginBottom:'-5px',height:'20px', width:'90px'}}>
                         <p style={{fontSize:'12px'}}>&#x23;{(currentQuestionIndex < questions.length ? currentQuestionIndex + 1 : currentQuestionIndex) + '/5'}</p>
                         <p>&#124;</p>
                         <p style={{fontSize:'12px'}}>{numberCorrect} correct</p>
                       </div>
                       <div >
-                      <button style={{width:'50px', marginLeft:'39px', marginTop:'8px', cursor:'pointer', color:'white', fontFamily:'Montserrat', borderRadius:'3px', border:'none', background:'linear-gradient(to right, #189b7a, #06c8e2)', fontWeight:'600'}} onClick={handleNextQuestion} disabled={selectedOption === null}>Next</button>
+                      <button style={{width:'50px', marginLeft:'35px', marginTop:'8px', cursor:'pointer', color:'white', fontFamily:'Montserrat', borderRadius:'3px', border:'none', background:'linear-gradient(to right, #189b7a, #06c8e2)', fontWeight:'600'}} onClick={handleNextQuestion} disabled={selectedOption === null}>Next</button>
                     </div>
                     </div>
                     

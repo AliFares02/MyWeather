@@ -298,7 +298,7 @@ useEffect(() => {
                   </p>
                 </div>
                 
-                  <div style={{background:'linear-gradient(to right, #2e5e52, #058c9e)',borderRadius:'5px', height:'208px', width:'188px',margin:'5.5px'}}>
+                  <div style={{background:'linear-gradient(to right, #2e5e52, #058c9e)',borderRadius:'5px', height:'208px', width:'188px',margin:'5.5px', position:'relative'}}>
                     <div>
                       <form style={{display:'flex', flexDirection:'column'}}>
                       {currentQuestionIndex < questions.length && (
@@ -328,14 +328,14 @@ useEffect(() => {
                       )}
                       </form>
                     </div>
-                    <div style={{position:'fixed', bottom:'220px'}}>
+                    <div style={{position:'absolute', bottom:'-6px', display:'flex', alignItems:'center'}}>
                       <div style={{marginLeft:'9px', display:'flex', alignItems:'center', gap:'2px', marginBottom:'-5px'}}>
                         <p style={{fontSize:'12px'}}>&#x23;{(currentQuestionIndex < questions.length ? currentQuestionIndex + 1 : currentQuestionIndex) + '/5'}</p>
                         <p>&#124;</p>
                         <p style={{fontSize:'12px'}}>{numberCorrect} correct</p>
                       </div>
-                      <div style={{position:'fixed', bottom:'233px'}}>
-                      <button style={{width:'50px', marginLeft:'132px', marginTop:'8px', cursor:'pointer', color:'white', fontFamily:'Montserrat', borderRadius:'3px', border:'none', background:'linear-gradient(to right, #189b7a, #06c8e2)', fontWeight:'600'}} onClick={handleNextQuestion} disabled={selectedOption === null}>Next</button>
+                      <div >
+                      <button style={{width:'50px', marginLeft:'39px', marginTop:'8px', cursor:'pointer', color:'white', fontFamily:'Montserrat', borderRadius:'3px', border:'none', background:'linear-gradient(to right, #189b7a, #06c8e2)', fontWeight:'600'}} onClick={handleNextQuestion} disabled={selectedOption === null}>Next</button>
                     </div>
                     </div>
                     

@@ -330,7 +330,7 @@ useEffect(() => {
                     </div>
                     <div style={{position:'fixed', bottom:'220px'}}>
                       <div style={{marginLeft:'9px', display:'flex', alignItems:'center', gap:'2px', marginBottom:'-5px'}}>
-                        <p style={{fontSize:'12px'}}>&#x23;{currentQuestionIndex + '/5'}</p>
+                        <p style={{fontSize:'12px'}}>&#x23;{(currentQuestionIndex < questions.length ? currentQuestionIndex + 1 : currentQuestionIndex) + '/5'}</p>
                         <p>&#124;</p>
                         <p style={{fontSize:'12px'}}>{numberCorrect} correct</p>
                       </div>
